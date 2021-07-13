@@ -168,7 +168,7 @@ class NemohOutput(object):
 
         # Read wave directions
         temp = cal[-6]
-        self.cal.wave_dir_n = np.float(temp.split()[0])
+        self.cal.wave_dir_n = int(temp.split()[0])
         self.cal.wave_dir_start = np.float(temp.split()[1])
         self.cal.wave_dir_end = np.float(temp.split()[2])
         self.cal.wave_dir = np.linspace(self.cal.wave_dir_start,self.cal.wave_dir_end,self.cal.wave_dir_n)
