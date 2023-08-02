@@ -71,7 +71,7 @@ class WamitOutput(object):
 
         print('\nReading the WAMIT results in the ' + self.files['out'] + ' file')
 
-        with open(self.files['out'],'rU') as fid:
+        with open(self.files['out'],'r') as fid:
 
             raw = fid.readlines()
 
